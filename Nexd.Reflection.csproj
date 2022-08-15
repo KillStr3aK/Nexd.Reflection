@@ -5,6 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Nexd</Authors>
+    <Company>Eternar</Company>
+    <PackageProjectUrl>https://github.com/KillStr3aK/Nexd.Reflection</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/KillStr3aK/Nexd.Reflection</RepositoryUrl>
+    <PackageTags>Reflection;Access;Private;Hidden;</PackageTags>
+    <Description>Access classes, methods, properties and fields that is unavailable due to their protection level.</Description>
   </PropertyGroup>
 
 </Project>
