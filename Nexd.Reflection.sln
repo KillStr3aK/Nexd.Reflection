@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32804.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nexd.Reflection", "Nexd.Reflection.csproj", "{EA1AE532-8E18-4C36-8C9F-BE757CFCEFE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1AE532-8E18-4C36-8C9F-BE757CFCEFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1AE532-8E18-4C36-8C9F-BE757CFCEFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1AE532-8E18-4C36-8C9F-BE757CFCEFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1AE532-8E18-4C36-8C9F-BE757CFCEFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A36E546-947A-4E19-BD47-E01EE4482C24}
+	EndGlobalSection
+EndGlobal
