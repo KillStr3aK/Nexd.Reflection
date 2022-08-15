@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/KillStr3aK/Nexd.Reflection</PackageProjectUrl>
     <RepositoryUrl>https://github.com/KillStr3aK/Nexd.Reflection</RepositoryUrl>
     <PackageTags>Reflection;Access;Private;Hidden;</PackageTags>
-    <Description>Access classes, methods, properties and fields that is unavailable due to their protection level.</Description>
+    <Description>Provides generic methods that gives you access to classes, methods, properties and fields that is unavailable due to their protection level.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationFile></DocumentationFile>
