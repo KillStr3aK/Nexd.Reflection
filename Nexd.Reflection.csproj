@@ -13,6 +13,7 @@
     <PackageTags>Reflection;Access;Private;Hidden;</PackageTags>
     <Description>Access classes, methods, properties and fields that is unavailable due to their protection level.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
