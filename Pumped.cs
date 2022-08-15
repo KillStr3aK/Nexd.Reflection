@@ -73,6 +73,26 @@ namespace Nexd.Reflection
             => InvokeVoid<Class>(null, method, args);
 
         /// <summary>
+        /// Invokes a <see langword="static"/> method from a hidden class that is unavailable due to its protection level.
+        /// </summary>
+        /// <typeparam name="Return"> Method return <see cref="Type"/></typeparam>
+        /// <param name="assembly">Assembly where the class (and method..) is located.</param>
+        /// <param name="class">Name of the hidden class</param>
+        /// <param name="method">Name of the method within the hidden class.</param>
+        /// <returns><typeparamref name="Return"/> returned from the method.</returns>
+        public static Return? InvokeInternal<Return>(Assembly assembly, string @class, string method)
+            => InvokeInternal<Return>(assembly, @class, method, null);
+
+        /// <summary>
+        /// Invokes a <see langword="static"/> method that returns <see langword="void"/> in the given <see cref="Assembly"/> from a hidden class that is unavailable due to its protection level.
+        /// </summary>
+        /// <param name="assembly">Assembly where the class (and method..) is located.</param>
+        /// <param name="class">Name of the hidden class</param>
+        /// <param name="method">Name of the method within the hidden class.</param>
+        public static void InvokeInternalVoid(Assembly assembly, string @class, string method)
+            => InvokeInternalVoid(assembly, @class, method, null);
+
+        /// <summary>
         /// Gets a <see langword="static"/> or instance field in a class that is unavailable due to its protection level.
         /// </summary>
         /// <typeparam name="Return">Field <see cref="Type"/></typeparam>
@@ -170,7 +190,7 @@ namespace Nexd.Reflection
         /// <param name="method">Name of the method within the hidden class.</param>
         /// <param name="args">Method arguments.</param>
         /// <returns><typeparamref name="Return"/> returned from the method.</returns>
-        public static Return? InvokeInternal<Return>(Assembly assembly, string @class, string method, params object[] args)
+        public static Return? InvokeInternal<Return>(Assembly assembly, string @class, string method, params object[]? args)
         {
             Type? versionType = assembly.GetType(@class);
             MethodInfo? methodInfo = versionType?.GetMethod(method);
@@ -184,7 +204,7 @@ namespace Nexd.Reflection
         /// <param name="class">Name of the hidden class</param>
         /// <param name="method">Name of the method within the hidden class.</param>
         /// <param name="args">Method arguments.</param>
-        public static void InvokeInternalVoid(Assembly assembly, string @class, string method, params object[] args)
+        public static void InvokeInternalVoid(Assembly assembly, string @class, string method, params object[]? args)
         {
             Type? versionType = assembly.GetType(@class);
             MethodInfo? methodInfo = versionType?.GetMethod(method);
