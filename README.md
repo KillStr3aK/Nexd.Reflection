@@ -8,7 +8,7 @@ Available on [NuGet](https://www.nuget.org/packages/Nexd.Reflection/)
 [![NuGet version (Nexd.Reflection)](https://img.shields.io/nuget/v/Nexd.Reflection.svg?style=flat-square)](https://www.nuget.org/packages/Nexd.Reflection/)
 
 ```
-dotnet add package Nexd.Reflection --version 1.0.1
+dotnet add package Nexd.Reflection --version 1.0.2
 ```
 
 # Examples
